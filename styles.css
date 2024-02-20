@@ -1,0 +1,49 @@
+*, *::after, *::before{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  
+body{
+    padding: 20px;
+    background-color: #212429;
+    margin: 0;
+}
+header{
+    background-color: #702df7;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+#stories{
+    margin-top: 20px;
+    background-color: #212429;
+
+}
+/* .story{
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+} */
+
+@media (max-width: 600px){
+    /*Mobile responsive adjusments*/
+}
+
+
+/* :root[data-theme="light"] {
+    --text: #0a1615;
+    --background: #fbfdfd;
+    --primary: #59b3a7;
+    --secondary: #9fbbd3;
+    --accent: #7a8fc2;
+  }
+  :root[data-theme="dark"] {
+    --text: #eaf6f5;
+    --background: #020303;
+    --primary: #4ca498;
+    --secondary: #2b475e;
+    --accent: #3d5185;
+  } */
