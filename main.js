@@ -12,12 +12,7 @@ cardBody.className = 'cardBody'
 card.appendChild(cardBody)
 body.appendChild(card)
 
-let titleOfStory
-let userName
-let numOfComments
-let scorePoints
-
-
+//test to see if it functions (line 16)
 // cardBody.innerHTML = '230 points- "Story of Coding" , user101, 20 comments'
 
 // function createCard(element){
@@ -31,10 +26,9 @@ let scorePoints
 
 
 
-const newStory = addNewStory('"Learn Coding" - 200 points \n 50 comments - submitted by user101')
-
+// const newStory = addNewStory('"Learn Coding" - 200 points \n 50 comments - submitted by user101')
 // createCard(newStory)
-console.log(newStory)
+// console.log(newStory)
 
 
 fetch(storyIdURL)
@@ -83,9 +77,9 @@ fetch(storyIdURL)
         const cardBody = document.createElement('div')
         cardBody.className = 'cardBody'
         //cardBody is called globally that creates new div/element
-    //setting text of card
-    cardBody.innerHTML = `<a href="${storyObj.url}">${storyObj.title}</a>`
-    //return element
-    body.appendChild(cardBody)
-}
+        //setting text of card
+        cardBody.innerHTML = `<a href="${storyObj.url}">${storyObj.title}</a> \n ${storyObj.score} points - written by ${storyObj.by} - ${storyObj.descendants} comments`
+        //return element
+        body.appendChild(cardBody)
+        }
 
