@@ -7,43 +7,25 @@
   
 body{
     padding: 20px;
-    background-color: #212429;
+    background-color: #f4f4f4;
     margin: 0;
 }
 header{
-    background-color: #702df7;
-    color: white;
+    background-color: #6f2cf5;
     padding: 10px 20px;
     text-align: center;
 }
 #stories{
     margin-top: 20px;
-    background-color: #212429;
-
 }
-/* .story{
-    background-color: white;
+.story{
+    background-color: #212429;
     border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
-} */
+}
 
 @media (max-width: 600px){
     /*Mobile responsive adjusments*/
 }
 
-
-/* :root[data-theme="light"] {
-    --text: #0a1615;
-    --background: #fbfdfd;
-    --primary: #59b3a7;
-    --secondary: #9fbbd3;
-    --accent: #7a8fc2;
-  }
-  :root[data-theme="dark"] {
-    --text: #eaf6f5;
-    --background: #020303;
-    --primary: #4ca498;
-    --secondary: #2b475e;
-    --accent: #3d5185;
-  } */

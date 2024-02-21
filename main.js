@@ -1,11 +1,30 @@
 
 const body = document.querySelector('body');
+ 
+const card = document.createElement('div')
+card.className = 'card'
 
-const parent = document.createElement('div');
-parent.className = 'parent';
+const cardBody = document.createElement('div')
+cardBody.className = 'cardBody'
 
-const child = document.createElement('div');
-child.className = 'child';
+card.appendChild(cardBody)
+body.appendChild(card)
 
-parent.appendChild(child);
-body.appendChild(parent);
+
+// function createCard(element){
+//    return  card.appendChild(element) 
+// }
+
+// function createStory(element){
+//     return cardBody.appendChild(element)
+// }
+// ;
+
+// function addNewStory(text){
+//     cardBody.innerText = `${text}`
+//     return cardBody
+// }
+
+// const newStory = addNewStory('How to learn coding - 200 points , 50 comments, submitted by user101')
+
+// addNewStory(newStory)
