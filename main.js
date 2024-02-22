@@ -9,23 +9,18 @@ card.className = 'card'
 const cardBody = document.createElement('div')
 cardBody.className = 'cardBody'
 
-card.appendChild(cardBody)
-body.appendChild(card)
+const storyButton = document.querySelector('#stories')
+const askButton = document.querySelector('#ask')
 
+
+              
+
+
+
+// card.appendChild(cardBody)
+// body.appendChild(card)
 //test to see if it functions (line 16)
 // cardBody.innerHTML = '230 points- "Story of Coding" , user101, 20 comments'
-
-// function createCard(element){
-//    return  card.appendChild(element) 
-// }
-
-// function createStory(element){
-//     return cardBody.appendChild(element)
-// }
-// ;
-
-
-
 // const newStory = addNewStory('"Learn Coding" - 200 points \n 50 comments - submitted by user101')
 // createCard(newStory)
 // console.log(newStory)
@@ -51,7 +46,8 @@ fetch(storyIdURL)
         
         //for loop to loop through arr and attach invidual ID 
     })
-     //building website
+
+     // next is building website
         //creating elements
         //loop through
         //template literals
@@ -62,24 +58,64 @@ fetch(storyIdURL)
             for(let story of arrayOfStoryObjs){
                 addNewStory(story)
             }
-        //  let storyDetailURL = []
-         
-            //  storyDetailURL.push(fetch(`https://hacker-news.firebaseio.com/v0/item/${arrayOfStoryObjs[url]}.json?print=pretty`))
-         
-        //  console.log(storyDetailURL)
-        //  return Promise.all(storyDetailURL)
-        // })
-        // .then((results) => Promise.all(results.map(res => res.json())))
+
+       
         })
+    
+    
+    
+    
+    
+    
+    
+    
+        //  .then((descendants) => {  
+    //     let arrayOfDescendants = []
+    //     for(let kid of descendants){
+    //         arrayOfDescendants.push(fetch(`https://hacker-news.firebaseio.com/v0/item/${kid}.json?print=pretty`))
+    //     }
+    // }) 
+    
+    // fetch(storyIdURL)
+    //         .then((rawResults) => {
+    //             return rawResults.json()
+    //         })        
+    //         .then((arrayOfIds) => {
+    //             console.log(arrayOfIds)
+    //             arrayOfIds.length = 100
+            //     function addCommentButton(commentObj){
+            //         viewComments.addEventListener('click', ()=>{
+            //             cardBody.innerHTML = `https://hacker-news.firebaseio.com/v0/item/${commentObj.text}.json?print=pretty`
+            //         })
+            //         addCommentButton(`${commentObj.text}`
+            // )}
+            //     })
+            // })
+                    
+         
+
+
 
     
+
         function addNewStory(storyObj){
-        const cardBody = document.createElement('div')
-        cardBody.className = 'cardBody'
+        const card = document.createElement('div')
+        card.className = 'card'
         //cardBody is called globally that creates new div/element
         //setting text of card
-        cardBody.innerHTML = `<a href="${storyObj.url}">${storyObj.title}</a> \n ${storyObj.score} points - written by ${storyObj.by} - ${storyObj.descendants} comments`
-        //return element
-        body.appendChild(cardBody)
+        card.innerHTML = `<a href="${storyObj.url}">${storyObj.title}</a> ${storyObj.score} points - Written by ${storyObj.by} \n ${storyObj.descendants} comments`
+        body.appendChild(card)
         }
 
+        
+       //build a function that you call w/the kids array
+        // function addComments(storyObj){
+        //     let kidArr = []
+        //     if(kidArr.length < 10){
+        //             kidArr[i]++
+        //     }
+
+        //     console.log(kidArr)
+        // }
+        
+       
