@@ -1,6 +1,5 @@
 const storyIdURL = 'https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty'
 
-
 const body = document.querySelector('body');
  
 const card = document.createElement('div')
@@ -12,7 +11,26 @@ cardBody.className = 'cardBody'
 const storyButton = document.querySelector('#stories')
 const askButton = document.querySelector('#ask')
 
+const askAPI = 'https://hacker-news.firebaseio.com/v0/item/121003.json?print=pretty'
 
+// fetch(askAPI)
+//     .then((results)=>{
+//         return results.json()
+//     })
+//     .then((askObj)=> {
+//         console.log(askObj)
+//       askButton.addEventListener('click', ()=>{
+// body.innerHTML = fetch(`https://hacker-news.firebaseio.com/v0/item/${askObj.text}.json?print=pretty`)
+//       })  
+//     })
+
+
+
+
+
+// askButton.addEventListener('click' , ()=>{
+//     for(let ask )
+   
               
 
 
